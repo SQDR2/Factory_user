@@ -1,0 +1,26 @@
+.header{
+  background-color: #25b0f3;
+  font-size: 30rpx;
+  color: #fff;
+  height: 50rpx;
+  border: 1rpx solid #25b0f3;
+  line-height: 50rpx;
+  text-align: center;
+}
+.leaveItem{
+  margin: 10rpx 20rpx;
+  background-color: #fff;
+}
+.leaveItem view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 40rpx;
+}
+.leaveReason{
+  width: 200rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+}

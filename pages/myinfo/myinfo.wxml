@@ -1,0 +1,47 @@
+<view>
+  <loading hidden="{{hiddenLoading}}">
+    加载中...
+  </loading>
+</view>
+
+<view class="add-page" hidden='{{hiddenMyInfo}}'>
+
+  <view class="mod-a">
+    <view class="header">
+
+      <image class="userinfo-avatar" src="{{dakaUser.userInfo.avatarUrl}}"></image>
+      <view>{{dakaUser.userInfo.nickName}}</view>
+
+    </view>
+  </view>
+
+  <view class="mod-a mt20">
+    <view class="mod">
+      <text class="key">真实姓名</text>
+      <text class="value">{{dakaUser.staffInfo.name}}</text>
+    </view>
+    <view class="mod">
+      <text class="key">手机号码</text>
+      <text class="value">{{dakaUser.staffInfo.phone}}</text>
+    </view>
+    <view class="mod ">
+      <text class="key">状态</text>
+      <text class="value">{{dakaUser.staffInfo.onjob?'在职':'离职'}}</text>
+    </view>
+
+    <view class="mod">
+      <input class="weui-input"  type="number" placeholder="请输入请假天数" bindblur='bindLeaveNum' value="{{num===0?'':num}}" />
+      <text class="vacateBtn" bindtap="leave">请假</text>
+    </view>
+    <view class="mod">
+      <picker mode="date" header-text="选择时间" value="{{date}}" bindchange="bindDateChange">
+        <view class="font30">
+          <text class="color3">请假日期：</text>
+          <text class="color6">{{leaveDay}}</text>
+          <text class="timeIcon">▼</text>
+        </view>
+      </picker>
+    </view>
+    <textarea class="vacateReason" auto-height placeholder="请输入请假原因" value="{{reason}}" 	bindblur='bindReason'/>
+  </view>
+</view>

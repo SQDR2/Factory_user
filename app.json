@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/authorize/authorize",
+    "pages/login/login",
+    "pages/leave/leave",
+    "pages/signout/signout",
+    "pages/sign/index",
+    "pages/myinfo/myinfo"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "工厂前台打卡",
+    "backgroundColor": "#f7f7f7",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#b2b2b2",
+    "selectedColor": "#2fcc85",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/sign/index",
+        "text": "打卡签到",
+        "iconPath": "image/check_unselected.png",
+        "selectedIconPath": "image/check_selected.png"
+      },
+      {
+        "pagePath": "pages/signout/signout",
+        "text": "打卡签退",
+        "iconPath": "image/signout.png",
+        "selectedIconPath": "image/signout_select.png"
+      },
+      {
+        "pagePath": "pages/leave/leave",
+        "text": "请假记录",
+        "iconPath": "image/task_unselected.png",
+        "selectedIconPath": "image/task_selected.png"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "text": "我的信息",
+        "iconPath": "image/myinfo_unselected.png",
+        "selectedIconPath": "image/myinfo_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": { "weui": true }
+}

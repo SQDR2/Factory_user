@@ -1,0 +1,14 @@
+{
+  "name": "factory_user",
+  "version": "1.0.0",
+  "description": "'工厂管理系统的前台签到'",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "神奇的人2",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  }
+}
